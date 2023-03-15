@@ -1,8 +1,8 @@
 FROM openjdk:11
 
-WORKDIR /myapp
+WORKDIR /usr/src/myapp
 
-COPY target/kubernet.jar /myapp
+COPY target/kubernet.jar /usr/src/myapp
 
 CMD [ "java","-jar","kubernet.jar" ]
 
